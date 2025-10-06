@@ -35,14 +35,17 @@ public class NewJFrame extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jMenu5 = new javax.swing.JMenu();
-        jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenu4 = new javax.swing.JMenu();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        jSeparator4 = new javax.swing.JPopupMenu.Separator();
+        jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -91,6 +94,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jMenuBar.add(jMenu2);
 
         jMenu3.setText("Movimientos ");
+        jMenu3.add(jSeparator2);
 
         jRadioButtonMenuItem1.setSelected(true);
         jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -108,6 +112,13 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jMenu5.setText("jMenu5");
         jMenu3.add(jMenu5);
+        jMenu3.add(jSeparator1);
+
+        jMenuBar.add(jMenu3);
+
+        jMenu4.setText("jMenu4");
+        jMenu4.add(jSeparator3);
+        jMenu4.add(jSeparator4);
 
         jRadioButtonMenuItem3.setSelected(true);
         jRadioButtonMenuItem3.setText("jRadioButtonMenuItem3");
@@ -116,12 +127,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 jRadioButtonMenuItem3ActionPerformed(evt);
             }
         });
-        jMenu3.add(jRadioButtonMenuItem3);
-        jMenu3.add(jSeparator1);
+        jMenu4.add(jRadioButtonMenuItem3);
 
-        jMenuBar.add(jMenu3);
-
-        jMenu4.setText("jMenu4");
         jMenuBar.add(jMenu4);
 
         setJMenuBar(jMenuBar);
@@ -194,5 +201,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JPopupMenu.Separator jSeparator4;
     // End of variables declaration//GEN-END:variables
 }
