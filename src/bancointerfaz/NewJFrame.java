@@ -1,6 +1,11 @@
 
 package bancointerfaz;
 
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+
+
 /**
  *
  * @author julio
@@ -9,9 +14,16 @@ public class NewJFrame extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame.class.getName());
 
-    /**
-     * Creates new form NewJFrame
-     */
+private void mostrarPanel(JPanel p) {
+    // Limpia el contenido actual
+    panelPrincipal.removeAll();
+    panelPrincipal.add(p, BorderLayout.CENTER);
+    panelPrincipal.revalidate();
+    panelPrincipal.repaint();
+
+    // Ajusta tamaño del JFrame al contenido
+    this.pack();
+}
     public NewJFrame() {
         initComponents();
     }
@@ -28,18 +40,18 @@ public class NewJFrame extends javax.swing.JFrame {
         FrmCuentas = new javax.swing.JFrame();
         jButton1 = new javax.swing.JButton();
         jInternalFrame1 = new javax.swing.JInternalFrame();
-        jPanel1 = new javax.swing.JPanel();
-        desktopPrincipal = new javax.swing.JDesktopPane();
+        panelPrincipal = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         menuCientes = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        menucuentas = new javax.swing.JMenuItem();
+        menuMovimientos = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
+        menuSaldoCliente = new javax.swing.JMenuItem();
+        menuMovientoTipo = new javax.swing.JMenuItem();
+        menuCuentaTipo = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
@@ -94,41 +106,15 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Frameprincipal");
 
+        panelPrincipal.setLayout(new java.awt.BorderLayout());
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 30)); // NOI18N
         jLabel1.setText("Bienbenido al banco BBB");
+        panelPrincipal.add(jLabel1, java.awt.BorderLayout.CENTER);
 
-        desktopPrincipal.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout desktopPrincipalLayout = new javax.swing.GroupLayout(desktopPrincipal);
-        desktopPrincipal.setLayout(desktopPrincipalLayout);
-        desktopPrincipalLayout.setHorizontalGroup(
-            desktopPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(desktopPrincipalLayout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(210, Short.MAX_VALUE))
-        );
-        desktopPrincipalLayout.setVerticalGroup(
-            desktopPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(desktopPrincipalLayout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(248, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(desktopPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPrincipal)
-        );
+        jLabel2.setForeground(new java.awt.Color(135, 135, 135));
+        jLabel2.setText("Seleccione una opccion de la parte superior para comenzar");
+        panelPrincipal.add(jLabel2, java.awt.BorderLayout.PAGE_END);
 
         jMenuBar.setToolTipText("Gestion");
 
@@ -147,29 +133,34 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jMenu1.add(menuCientes);
 
-        jMenuItem4.setText("Cuentas");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        menucuentas.setText("Cuentas");
+        menucuentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                menucuentasActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem4);
+        jMenu1.add(menucuentas);
 
-        jMenuItem5.setText("jMenuItem1");
-        jMenu1.add(jMenuItem5);
+        menuMovimientos.setText("Movimientos");
+        menuMovimientos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuMovimientosActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuMovimientos);
 
         jMenuBar.add(jMenu1);
 
-        jMenu2.setText("Cuentas ");
+        jMenu2.setText("Reportes");
 
-        jMenuItem3.setText("jMenuItem1");
-        jMenu2.add(jMenuItem3);
+        menuSaldoCliente.setText("Saldos por Cliente");
+        jMenu2.add(menuSaldoCliente);
 
-        jMenuItem6.setText("jMenuItem1");
-        jMenu2.add(jMenuItem6);
+        menuMovientoTipo.setText("Movimientos por tipo");
+        jMenu2.add(menuMovientoTipo);
 
-        jMenuItem7.setText("jMenuItem1");
-        jMenu2.add(jMenuItem7);
+        menuCuentaTipo.setText("Cuentas por tipo");
+        jMenu2.add(menuCuentaTipo);
 
         jMenuBar.add(jMenu2);
 
@@ -177,7 +168,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jMenu3.add(jSeparator2);
         jMenu3.add(jSeparator1);
 
-        jMenuItem2.setText("jMenuItem1");
+        jMenuItem2.setText("Registrar movimientos");
         jMenu3.add(jMenuItem2);
 
         jMenuItem8.setText("jMenuItem1");
@@ -188,7 +179,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jMenuBar.add(jMenu3);
 
-        jMenu4.setText("Sesión");
+        jMenu4.setText("Archivo");
         jMenu4.add(jSeparator3);
         jMenu4.add(jSeparator4);
 
@@ -218,14 +209,14 @@ public class NewJFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE))
         );
 
         pack();
@@ -240,27 +231,24 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void menuCientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCientesActionPerformed
-        FrmClientes frm = new FrmClientes();
-    
-    // Agregar al JDesktopPane (usa el nombre correcto de tu variable)
-    desktopPrincipal.add(frm);
-    
-    // Hacer visible el frame
-    frm.setVisible(true);
-    
-    // Opcional: traerlo al frente
-    frm.toFront();
+        PanelClientes p = new PanelClientes();
+        mostrarPanel(p);
     }//GEN-LAST:event_menuCientesActionPerformed
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1ActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        FrmCuentas frm = new FrmCuentas();
-    desktopPrincipal.add(frm);
-    frm.setVisible(true);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    private void menucuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menucuentasActionPerformed
+       PanelCuentas p = new PanelCuentas();
+        mostrarPanel(p);
+    }//GEN-LAST:event_menucuentasActionPerformed
+
+    private void menuMovimientosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuMovimientosActionPerformed
+        PanelMovimientos p = new PanelMovimientos();
+        mostrarPanel(p);
+       
+    }//GEN-LAST:event_menuMovimientosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -289,10 +277,10 @@ public class NewJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame FrmCuentas;
-    private javax.swing.JDesktopPane desktopPrincipal;
     private javax.swing.JButton jButton1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -301,18 +289,18 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JMenuItem menuCientes;
+    private javax.swing.JMenuItem menuCuentaTipo;
+    private javax.swing.JMenuItem menuMovientoTipo;
+    private javax.swing.JMenuItem menuMovimientos;
+    private javax.swing.JMenuItem menuSaldoCliente;
+    private javax.swing.JMenuItem menucuentas;
+    private javax.swing.JPanel panelPrincipal;
     // End of variables declaration//GEN-END:variables
 }
