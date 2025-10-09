@@ -60,10 +60,18 @@ public class Cliente {
 
     public String getGenero() { return genero; }
     public void setGenero(String genero) { this.genero = genero; }
-
-    // 🔹 Método auxiliar (opcional, útil para debug o logs)
     @Override
     public String toString() {
-        return id + " - " + nombres + " " + aPaterno + " " + aMaterno + " (" + dni + ")";
+            return nombres + " " + (aPaterno != null ? aPaterno : "");
+
     }
+    // 🔹 Método auxiliar (opcional, útil para debug o logs)
+   
+    
+    public Cliente(int id, String nombres) {
+    this.id = id;
+    this.nombres = nombres;
+    }
+
 }
+

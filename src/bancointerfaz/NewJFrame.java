@@ -52,12 +52,6 @@ private void mostrarPanel(JPanel p) {
         menuSaldoCliente = new javax.swing.JMenuItem();
         menuMovientoTipo = new javax.swing.JMenuItem();
         menuCuentaTipo = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jSeparator2 = new javax.swing.JPopupMenu.Separator();
-        jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jSeparator3 = new javax.swing.JPopupMenu.Separator();
         jSeparator4 = new javax.swing.JPopupMenu.Separator();
@@ -164,21 +158,6 @@ private void mostrarPanel(JPanel p) {
 
         jMenuBar.add(jMenu2);
 
-        jMenu3.setText("Movimientos ");
-        jMenu3.add(jSeparator2);
-        jMenu3.add(jSeparator1);
-
-        jMenuItem2.setText("Registrar movimientos");
-        jMenu3.add(jMenuItem2);
-
-        jMenuItem8.setText("jMenuItem1");
-        jMenu3.add(jMenuItem8);
-
-        jMenuItem9.setText("jMenuItem1");
-        jMenu3.add(jMenuItem9);
-
-        jMenuBar.add(jMenu3);
-
         jMenu4.setText("Archivo");
         jMenu4.add(jSeparator3);
         jMenu4.add(jSeparator4);
@@ -209,14 +188,14 @@ private void mostrarPanel(JPanel p) {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 641, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE))
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 367, Short.MAX_VALUE))
         );
 
         pack();
@@ -283,16 +262,10 @@ private void mostrarPanel(JPanel p) {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
-    private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JMenuItem menuCientes;

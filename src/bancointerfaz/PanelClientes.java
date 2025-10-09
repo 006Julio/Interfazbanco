@@ -196,6 +196,7 @@ public class PanelClientes extends javax.swing.JPanel {
             }
         });
 
+        tablaClientes.setBackground(new java.awt.Color(232, 247, 255));
         tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -241,7 +242,7 @@ public class PanelClientes extends javax.swing.JPanel {
                             .addComponent(btnEliminar)
                             .addGap(36, 36, 36)
                             .addComponent(btnBuscar))))
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -257,7 +258,7 @@ public class PanelClientes extends javax.swing.JPanel {
                     .addComponent(btnBuscar))
                 .addGap(41, 41, 41)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

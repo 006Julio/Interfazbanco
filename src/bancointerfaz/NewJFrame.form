@@ -121,32 +121,6 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Movimientos "/>
-          </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Registrar movimientos"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jMenuItem1"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jMenuItem1"/>
-              </Properties>
-            </MenuItem>
-          </SubComponents>
-        </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Archivo"/>
@@ -203,7 +177,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="panelPrincipal" pref="522" max="32767" attributes="0"/>
+              <Component id="panelPrincipal" pref="641" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -212,7 +186,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="panelPrincipal" pref="286" max="32767" attributes="0"/>
+              <Component id="panelPrincipal" pref="367" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

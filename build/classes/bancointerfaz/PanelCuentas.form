@@ -16,30 +16,51 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jPanel2" max="32767" attributes="0"/>
-                  <Component id="jPanel1" pref="0" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jPanel3" max="32767" attributes="0"/>
+                          <Component id="jPanel1" min="-2" pref="803" max="-2" attributes="0"/>
+                          <Component id="jPanel2" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                      <Component id="btnNuevoCuenta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="btnGuardarCuenta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <Component id="btnActualizarCuenta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                      <Component id="btnEliminarCuenta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="btnBuscarCuenta" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jPanel3" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnNuevoCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnGuardarCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnActualizarCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEliminarCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnBuscarCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -100,10 +121,10 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="58" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -112,7 +133,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="64" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -132,9 +153,9 @@
                       </Group>
                       <EmptySpace pref="36" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextField3" min="-2" pref="146" max="-2" attributes="0"/>
-                          <Component id="jTextField2" min="-2" pref="146" max="-2" attributes="0"/>
-                          <Component id="jTextField1" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="txtNumeroCuenta" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="cmbCliente" min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="cmbMoneda" min="-2" pref="135" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
@@ -148,11 +169,11 @@
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtNumeroCuenta" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
+                              <Component id="cmbCliente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="cmbMoneda" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -184,14 +205,10 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Fecha Apertura:"/>
+                <Property name="text" type="java.lang.String" value="Moneda"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="txtNumeroCuenta">
             </Component>
             <Container class="javax.swing.JPanel" name="jPanel5">
 
@@ -208,10 +225,10 @@
                           <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jComboBox2" min="-2" pref="135" max="-2" attributes="0"/>
-                                  <Component id="jComboBox3" min="-2" pref="135" max="-2" attributes="0"/>
+                                  <Component id="cmbTipoCuenta" min="-2" pref="135" max="-2" attributes="0"/>
+                                  <Component id="cmbEstado" min="-2" pref="135" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jTextField7" min="-2" pref="137" max="-2" attributes="0"/>
+                              <Component id="txtSaldo" min="-2" pref="137" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="74" max="32767" attributes="0"/>
                       </Group>
@@ -221,11 +238,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace pref="23" max="32767" attributes="0"/>
-                          <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbTipoCuenta" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField7" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSaldo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbEstado" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -256,7 +273,7 @@
                     <Property name="text" type="java.lang.String" value="Estado:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox2">
+                <Component class="javax.swing.JComboBox" name="cmbTipoCuenta">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="4">
@@ -271,9 +288,9 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField7">
+                <Component class="javax.swing.JTextField" name="txtSaldo">
                 </Component>
-                <Component class="javax.swing.JComboBox" name="jComboBox3">
+                <Component class="javax.swing.JComboBox" name="cmbEstado">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="2">
@@ -288,6 +305,35 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JComboBox" name="cmbCliente">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Ahorros"/>
+                    <StringItem index="1" value="Corriente"/>
+                    <StringItem index="2" value="N&#xf3;mina"/>
+                    <StringItem index="3" value="Inversi&#xf3;n"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cmbMoneda">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="Soles"/>
+                    <StringItem index="1" value="Dolares"/>
+                    <StringItem index="2" value="Euros"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
           </SubComponents>
         </Container>
       </SubComponents>
@@ -304,15 +350,131 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="843" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="192" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" pref="205" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
       </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tablaCuentas">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="7" rowCount="4">
+                    <Column editable="true" title="ID" type="java.lang.Integer"/>
+                    <Column editable="true" title="N&#xfa;mero" type="java.lang.Integer"/>
+                    <Column editable="true" title="Cliente" type="java.lang.String"/>
+                    <Column editable="true" title="Tipo" type="java.lang.String"/>
+                    <Column editable="true" title="Moneda" type="java.lang.String"/>
+                    <Column editable="true" title="Estado" type="java.lang.String"/>
+                    <Column editable="true" title="Saldo" type="java.lang.Double"/>
+                  </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="btnNuevoCuenta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nuevo"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNuevoCuentaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnGuardarCuenta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarCuentaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnActualizarCuenta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Actualizar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnActualizarCuentaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnEliminarCuenta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eliminar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarCuentaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnBuscarCuenta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Buscar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscarCuentaActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>
