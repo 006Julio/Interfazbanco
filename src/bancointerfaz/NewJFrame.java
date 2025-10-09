@@ -103,14 +103,20 @@ private void mostrarPanel(JPanel p) {
         panelPrincipal.setLayout(new java.awt.BorderLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 30)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Bienbenido al banco BBB");
+        jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         panelPrincipal.add(jLabel1, java.awt.BorderLayout.CENTER);
 
         jLabel2.setForeground(new java.awt.Color(135, 135, 135));
         jLabel2.setText("Seleccione una opccion de la parte superior para comenzar");
         panelPrincipal.add(jLabel2, java.awt.BorderLayout.PAGE_END);
 
+        jMenuBar.setBackground(new java.awt.Color(144, 159, 255));
+        jMenuBar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jMenuBar.setToolTipText("Gestion");
+        jMenuBar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuBar.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
 
         jMenu1.setText("Gestion");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -195,7 +201,7 @@ private void mostrarPanel(JPanel p) {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 367, Short.MAX_VALUE))
+                .addComponent(panelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE))
         );
 
         pack();
